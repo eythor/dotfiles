@@ -40,7 +40,7 @@ set wildignore=*.swp,*.bak,*pyc,*class,*.o,*.obj,*.git
 set wrap
 
 " Nerdtree
-nmap <leader>n :NERDTreeClose<CR>:NERDTreToggle<CR>
+nmap <leader>n :NERDTreeClose<CR>:NERDTreeToggle<CR>
 nmap <leader>N :NERDTreeClose<CR>
 
 "autocmd vimenter * NERDTree			"open nerdtree right away
