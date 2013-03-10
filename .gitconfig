@@ -1,0 +1,17 @@
+[color]
+  pager = true
+  ui = auto 
+[user]
+	email=eythor@gmail88.com
+	name = Eyþór Sigmundsson
+[merge]
+	tool = vimdiff
+[core]
+	editor = vim
+[alias]
+	showf = show --pretty=\"format:\" --name-only
+	logg = log --graph --stat
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	st = status
+	co = checkout 
