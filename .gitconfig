@@ -1,17 +1,38 @@
 [color]
   pager = true
   ui = auto 
+[color "branch"]
+  current = red
+  local = yellow
+[color "log"]
+  meta = cyan
+  frag = magenta
+  old = red bold
+[color "diff"]
+  meta = cyan
+  frag = magenta
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
 [user]
-	email=eythor@gmail88.com
-	name = Eyþór Sigmundsson
+  email=eythor@mbl.is
+  name = Eyþór Sigmundsson
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [core]
-	editor = vim
+  editor = vim
 [alias]
-	showf = show --pretty=\"format:\" --name-only
-	logg = log --graph --stat
-	unstage = reset HEAD --
-	last = log -1 HEAD
-	st = status
-	co = checkout 
+  br = branch --list
+  unst = reset HEAD --
+  resoft = reset --soft
+  rehard = reset --hard
+  last = log -1 HEAD --stat
+  st = status -sb
+  co = checkout 
+  cb = checkout -B
+  wdiff = diff --word-diff=color
+  alg = log --graph --all --abbrev-commit --pretty=format:'%d%x20%h%x20%an%x20%s'
+  lg = log --graph --pretty=format:"%h%d\\%s\\ \\ [%cn,\\ %ar]"

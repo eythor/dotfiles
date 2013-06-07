@@ -31,7 +31,7 @@ set shiftwidth=2
 set showmatch
 set smartcase					"ignore case if search pattern is all lowercase, case-sensitive otherwise
 set softtabstop=2
-set spell
+"set spell
 set tabstop=2
 set title
 set undolevels=1000				"love me dem undos
