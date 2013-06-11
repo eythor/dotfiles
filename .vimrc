@@ -79,6 +79,13 @@ nnoremap k gk
 nnoremap <silent> <Space> za
 vnoremap <silent> <Space> zf
 
+
+" unite 
+nnoremap <leader>t :Unite file_rec/async<cr>
+nnoremap <leader>g :Unite grep:.<cr>
+nnoremap <leader>y :Unite history/yanks<cr>
+nnoremap <leader>b :Unite -quick-match buffer<cr>
+
 " 'easy' split navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
